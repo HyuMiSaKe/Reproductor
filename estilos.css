@@ -1,0 +1,134 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(179.04deg, #1f3629 0.82%, #94bb8d 97.99%);
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls{
+    width: 30%;
+    padding: 15em;
+    background-color: rgb(122, 148, 101);
+    animation-name: cambiarColor;
+    border-radius: 15%;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    animation-duration: 6s;
+}
+button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: rgb(195, 216, 146);
+    color: #304d36;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    transition: all 1.0s;
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    left:40%;
+    right: 30ch;
+    top:45cm;
+    bottom: 0cm;
+}
+
+
+button:hover {
+    outline: none;
+    background-color: #548b58;
+    color: #fff;
+}
+
+.texto{
+    font-family: 'Indie Flower';
+    margin-right: 3px;
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 55px;
+    text-align:center;
+    color: #243124;
+    overflow: hidden;
+    margin: auto;
+    left:0%;
+    right: 0ch;
+    top:14cm;
+    bottom: 0cm;
+}
+
+
+.cover{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border:10px solid rgb(39, 65, 38);
+    overflow: hidden;
+    position: absolute;
+    margin: auto;
+    left:0%;
+    right: 0ch;
+    top:-8cm;
+    bottom: 0cm;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+
+    animation-name: girar;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    animation-duration: 3s;
+}
+
+
+@keyframes girar {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cambiarColor {
+    0% {
+        background-color: rgb(122, 148, 101);
+    }
+    20% {
+        background-color: rgb(53, 90, 50);
+    }
+    40% {
+        background-color: rgb(72, 161, 72);
+    }
+    60% {
+        background-color: rgb(87, 134, 73);
+    }
+    80% {
+        background-color: rgb(86, 138, 99);
+    }
+    100% {
+        background-color: rgb(78, 122, 84);
+    }
+}
